@@ -25,7 +25,7 @@
                 &none       &none   &none   &kp EQUAL   &trans  &none               &trans  &kp HOME    &kp PG_DN    &kp PG_UP    &kp END
             >;
 
-               sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
+             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         mo2_layer {
