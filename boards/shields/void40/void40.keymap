@@ -19,10 +19,10 @@
 
         mo1_layer {
             bindings = <
-                &kp GRAVE   &kp N1  &kp N2  &kp N3      &kp N4  &kp N5  &kp N6      &kp N7  &kp N8  &kp N9  &kp N0      &none
-                &none       &none   &none   &none       &none   &none   &none       &none   &none   &none   &kp SQT     &none
-                &trans      &none   &none   &none       &none   &none   &none       &none   &none   &none   &kp BSLH    &none
-                &none       &none   &none   &kp EQUAL   &trans  &none               &trans  &none   &none   &none       &none
+                &kp GRAVE   &kp N1  &kp N2  &kp N3      &kp N4  &kp N5  &kp N6      &kp N7  &kp N8      &kp N9       &kp N0       &none
+                &none       &none   &none   &none       &none   &none   &none       &none   &none       &none        &kp SQT      &none
+                &trans      &none   &none   &none       &none   &none   &none       &none   &none       &none        &kp BSLH     &none
+                &none       &none   &none   &kp EQUAL   &trans  &none               &trans  &kp HOME    &kp PG_DN    &kp PG_UP    &kp END
             >;
 
                sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
@@ -30,10 +30,10 @@
 
         mo2_layer {
             bindings = <
-                &bt BT_CLR_ALL    &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &none       &none          &none      &none       &none    &none    &none      &none
-                &none    &none            &none           &none            &none       &none          &none      &none       &none    &none    &none      &none
-                &none    &none            &none           &none            &none       &bt BT_CLR     &none      &none       &none    &none    &none      &bootloader
-                &none    &none            &none           &none            &trans      &none                     &trans      &none    &none    &none      &none
+                &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &none     &none    &none      &none       &none    &none    &none      &none
+                &none    &none   &none           &none           &none       &none          &none      &none       &none    &none    &none      &none
+                &none    &none   &none           &none           &none       &bt BT_CLR     &none      &none       &none    &none    &none      &bootloader
+                &none    &none   &none           &none           &trans      &none                     &trans      &none    &none    &none      &none
             >;
         };
     };
